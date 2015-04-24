@@ -13,7 +13,6 @@
 #import "RecentConversationViewController.h"
 #import "ContactsViewController.h"
 #import "SettingsViewController.h"
-#import "OpenConversationViewController.h"
 #import "AVUserStore.h"
 
 @interface MainViewController () {
@@ -63,8 +62,6 @@
         self.title = @"联系人";
     } else if ([viewController isKindOfClass:[SettingsViewController class]]) {
         self.title = @"设置";
-    } else if ([viewController isKindOfClass:[OpenConversationViewController class]]) {
-        self.title = @"部落";
     }
 }
 

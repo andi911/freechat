@@ -83,7 +83,6 @@
 		5C29575D1A81EFC200BF1E9C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C29575C1A81EFC200BF1E9C /* libz.dylib */; };
 		5C29575F1A81EFCA00BF1E9C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C29575E1A81EFCA00BF1E9C /* libsqlite3.dylib */; };
 		5C2957611A81EFDA00BF1E9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2957601A81EFDA00BF1E9C /* UIKit.framework */; };
-		5C5441B71AC373BC0023360D /* OpenConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5441B61AC373BC0023360D /* OpenConversationViewController.m */; };
 		5C5441B91AC375E20023360D /* openchat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C5441B81AC375E20023360D /* openchat@2x.png */; };
 		5C5441BC1AC377970023360D /* Contacts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C5441BA1AC377970023360D /* Contacts@2x.png */; };
 		5C5441BD1AC377970023360D /* Recents@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C5441BB1AC377970023360D /* Recents@2x.png */; };
@@ -252,8 +251,6 @@
 		5C29575C1A81EFC200BF1E9C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		5C29575E1A81EFCA00BF1E9C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		5C2957601A81EFDA00BF1E9C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		5C5441B51AC373BC0023360D /* OpenConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenConversationViewController.h; sourceTree = "<group>"; };
-		5C5441B61AC373BC0023360D /* OpenConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenConversationViewController.m; sourceTree = "<group>"; };
 		5C5441B81AC375E20023360D /* openchat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "openchat@2x.png"; path = "images/openchat@2x.png"; sourceTree = "<group>"; };
 		5C5441BA1AC377970023360D /* Contacts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Contacts@2x.png"; path = "images/Contacts@2x.png"; sourceTree = "<group>"; };
 		5C5441BB1AC377970023360D /* Recents@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Recents@2x.png"; path = "images/Recents@2x.png"; sourceTree = "<group>"; };
@@ -535,8 +532,6 @@
 				5CC31D881AA9A7C0001DBA7A /* ChangeNameViewController.m */,
 				5CC31D8B1AA9FB00001DBA7A /* ConversationListViewController.h */,
 				5CC31D8C1AA9FB00001DBA7A /* ConversationListViewController.m */,
-				5C5441B51AC373BC0023360D /* OpenConversationViewController.h */,
-				5C5441B61AC373BC0023360D /* OpenConversationViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -801,7 +796,6 @@
 				5CDB0A851AA6D6DD00F13A1F /* RemoteMessagePersisiter.m in Sources */,
 				5CDB0A7B1AA6162B00F13A1F /* FMDatabaseAdditions.m in Sources */,
 				5C1872231AA46A7200272788 /* ConversationMuteView.m in Sources */,
-				5C5441B71AC373BC0023360D /* OpenConversationViewController.m in Sources */,
 				5CDB0A7D1AA6162B00F13A1F /* FMDatabaseQueue.m in Sources */,
 				5C29571A1A811B2700BF1E9C /* LoginViewController.m in Sources */,
 				5C1871CC1AA466A700272788 /* AFHTTPSessionManager.m in Sources */,
