@@ -25,26 +25,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    CGSize frameSize = self.view.frame.size;
-    _username = [[UITextField alloc] initWithFrame:CGRectMake(30, 50, frameSize.width - 60, 30)];
-    [_username setBorderStyle:UITextBorderStyleRoundedRect];
-    [_username setPlaceholder:@"username"];
-    _password = [[UITextField alloc] initWithFrame:CGRectMake(30, 90, frameSize.width - 60, 30)];
-    [_password setBorderStyle:UITextBorderStyleRoundedRect];
-    [_password setPlaceholder:@"password"];
-    UIButton *signUp = [[UIButton alloc] initWithFrame:CGRectMake(frameSize.width - 140, 140, 60, 20)];
-    UIButton *signIn = [[UIButton alloc] initWithFrame:CGRectMake(frameSize.width - 70, 140, 60, 20)];
-    [signUp setTitle:@"注册" forState:UIControlStateNormal];
-    [signIn setTitle:@"登录" forState:UIControlStateNormal];
-    [signUp setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    [signIn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    [signUp addTarget:self action:@selector(signupClicked:) forControlEvents:UIControlEventTouchUpInside];
-    [signIn addTarget:self action:@selector(signinClicked:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:_username];
-    [self.view addSubview:_password];
-    [self.view addSubview:signUp];
-    [self.view addSubview:signIn];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -82,25 +62,6 @@
     }];
 }
 
-- (void)signinClicked:(id)sender {
-    [AVUser logInWithUsernameInBackground:_username.text
-                                 password:_password.text
-                                    block:^(AVUser *user, NSError *error){
-                                        if (error) {
-                                            UIAlertView *view = [[UIAlertView alloc] initWithTitle:@"Error" message:[error description] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                                            [view show];
-                                        } else {
-                                            [self pushToMainViewController];
-                                        }
-                                    }];
-}
-
-- (IBAction)signupClicked:(id)sender {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *signupView = [storyboard instantiateViewControllerWithIdentifier:@"SignupViewIdentifier"];
-    [self.navigationController pushViewController:signupView animated:YES];
-}
-
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [touches anyObject];
     UIView *view = (UIView *)[touch view];
@@ -134,4 +95,24 @@
 }
 */
 
+- (IBAction)loginAction:(id)sender {
+    [AVUser logInWithUsernameInBackground:_userName.text
+                                 password:_userCode.text
+                                    block:^(AVUser *user, NSError *error){
+                                        if (error) {
+                                            UIAlertView *view = [[UIAlertView alloc] initWithTitle:@"Error" message:[error description] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                                            [view show];
+                                        } else {
+                                            [self pushToMainViewController];
+                                        }
+                                    }];
+    
+}
+
+- (IBAction)registerAction:(id)sender {
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *signupView = [storyboard instantiateViewControllerWithIdentifier:@"SignupViewIdentifier"];
+    [self.navigationController pushViewController:signupView animated:YES];
+}
 @end
