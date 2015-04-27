@@ -86,7 +86,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ef9-Fe-QdM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default_avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ef9-Fe-QdM">
                                 <rect key="frame" x="130" y="124" width="60" height="60"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oo0-FB-UIf">
@@ -214,6 +214,7 @@
     <resources>
         <image name="Contacts.png" width="25" height="25"/>
         <image name="Recents.png" width="25" height="25"/>
+        <image name="default_avatar.png" width="225" height="225"/>
         <image name="setting.png" width="25" height="25"/>
     </resources>
 </document>
