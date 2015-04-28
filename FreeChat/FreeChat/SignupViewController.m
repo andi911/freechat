@@ -34,17 +34,34 @@
     [_avatar addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(avatarTap:)]];
     _customeImage = nil;
 
-    _username = [[UITextField alloc] initWithFrame:CGRectMake(70, 160+50, frameSize.width - 100, 30)];
+    _username = [[UITextField alloc] initWithFrame:CGRectMake(80, 160+50, frameSize.width - 100, 30)];
     [_username setBorderStyle:UITextBorderStyleRoundedRect];
     [_username setPlaceholder:@"用户名"];
-    _email = [[UITextField alloc] initWithFrame:CGRectMake(70, 200+50, frameSize.width - 100, 30)];
+    UILabel *name = [[UILabel alloc]initWithFrame:CGRectMake(30, 160+50, 50, 30)];
+    name.text = @"账户:";
+    name.font = [UIFont systemFontOfSize:17.0f];
+    [self.view addSubview:name];
+    
+    _email = [[UITextField alloc] initWithFrame:CGRectMake(80, 200+50, frameSize.width - 100, 30)];
     [_email setBorderStyle:UITextBorderStyleRoundedRect];
     [_email setPlaceholder:@"邮箱"];
-    _password = [[UITextField alloc] initWithFrame:CGRectMake(70, 240+50, frameSize.width - 100, 30)];
+    UILabel *email = [[UILabel alloc]initWithFrame:CGRectMake(30, 200+50, 50, 30)];
+    email.text = @"邮箱:";
+    
+    email.font = [UIFont systemFontOfSize:17.0f];
+    [self.view addSubview:email];
+
+    _password = [[UITextField alloc] initWithFrame:CGRectMake(80, 240+50, frameSize.width - 100, 30)];
     [_password setBorderStyle:UITextBorderStyleRoundedRect];
     [_password setPlaceholder:@"密码"];
+    
+    UILabel *password = [[UILabel alloc]initWithFrame:CGRectMake(30, 240+50, 50, 30)];
+    password.text = @"密码:";
+    password.font = [UIFont systemFontOfSize:17.0f];
+    [self.view addSubview:password];
 
-    UIButton *createButton = [[UIButton alloc] initWithFrame:CGRectMake(30, 290+50, frameSize.width - 60, 40)];
+
+    UIButton *createButton = [[UIButton alloc] initWithFrame:CGRectMake(30, 290+50, frameSize.width - 50, 40)];
     
     [createButton setTitle:@"创建" forState:UIControlStateNormal];
     [createButton setBackgroundColor:[UIColor colorWithRed:11/255.0f green:96/255.0f blue:254/255.0f alpha:1]];
