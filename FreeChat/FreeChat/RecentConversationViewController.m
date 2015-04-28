@@ -37,7 +37,7 @@ NSString * kConversationCellIdentifier = @"ConversationIdentifier";
     [store addEventObserver:self forConversation:@"*"];
     [self loadFootView];
     [self baseInformation];
-//    [self loadSegmentController];
+    [self loadSegmentController];
     
 }
 

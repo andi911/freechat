@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  FreeChat
+
+  Created by liangyu on 15/4/28.
+  Copyright (c) 2015年 Feng Junwen. All rights reserved.
+*/
+"Message" = "message";
+"Phone" = "phone";

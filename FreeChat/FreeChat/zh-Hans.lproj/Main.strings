@@ -1,0 +1,30 @@
+
+/* Class = "UITabBarItem"; title = "联系人"; ObjectID = "0OO-SP-Vss"; */
+"0OO-SP-Vss.title" = "联系人";
+
+/* Class = "UITabBarItem"; title = "动态"; ObjectID = "63i-gV-KNo"; */
+"63i-gV-KNo.title" = "动态";
+
+/* Class = "UILabel"; text = "账号："; ObjectID = "Pce-P7-Ifm"; */
+"Pce-P7-Ifm.text" = "账号：";
+
+/* Class = "UITabBarItem"; title = "动态"; ObjectID = "RID-OO-ckh"; */
+"RID-OO-ckh.title" = "动态";
+
+/* Class = "UITabBarItem"; title = "联系人"; ObjectID = "Rb4-Nm-VW9"; */
+"Rb4-Nm-VW9.title" = "联系人";
+
+/* Class = "UITabBarItem"; title = "消息"; ObjectID = "TII-kV-5Sd"; */
+"TII-kV-5Sd.title" = "消息";
+
+/* Class = "UIButton"; normalTitle = "注册"; ObjectID = "ZmT-KL-8P6"; */
+"ZmT-KL-8P6.normalTitle" = "注册";
+
+/* Class = "UITabBarItem"; title = "消息"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "消息";
+
+/* Class = "UILabel"; text = "密码："; ObjectID = "itr-2f-1xH"; */
+"itr-2f-1xH.text" = "密码：";
+
+/* Class = "UIButton"; normalTitle = "登录"; ObjectID = "nYS-AG-QyK"; */
+"nYS-AG-QyK.normalTitle" = "登录";

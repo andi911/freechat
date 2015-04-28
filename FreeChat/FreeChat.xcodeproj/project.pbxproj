@@ -109,6 +109,7 @@
 		D92757301AEF4233000A818C /* Recents@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D927572F1AEF4233000A818C /* Recents@2x.png */; };
 		D92757331AEF42F5000A818C /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D92757311AEF42F5000A818C /* setting@2x.png */; };
 		D92757341AEF42F5000A818C /* Contacts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D92757321AEF42F5000A818C /* Contacts@2x.png */; };
+		D92757471AEF7FEB000A818C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D92757491AEF7FEB000A818C /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -297,6 +298,10 @@
 		D92757321AEF42F5000A818C /* Contacts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contacts@2x.png"; sourceTree = "<group>"; };
 		D92757351AEF617D000A818C /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		D927573E1AEF6E0A000A818C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D92757451AEF7FD4000A818C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		D92757461AEF7FD4000A818C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		D92757481AEF7FEB000A818C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D927574A1AEF7FF1000A818C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -490,6 +495,7 @@
 				5C2956CD1A80BED400BF1E9C /* Info.plist */,
 				5C2956CE1A80BED400BF1E9C /* main.m */,
 				D927573E1AEF6E0A000A818C /* PrefixHeader.pch */,
+				D92757491AEF7FEB000A818C /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -739,6 +745,7 @@
 				5C1872041AA4698200272788 /* chat_ipunt_message.png in Resources */,
 				5C18720C1AA4698200272788 /* chatto_bg_normal.png in Resources */,
 				5C0315651A8209200051E65C /* default_avatar.png in Resources */,
+				D92757471AEF7FEB000A818C /* Localizable.strings in Resources */,
 				5C2956DB1A80BED400BF1E9C /* Main.storyboard in Resources */,
 				5C2956E01A80BED400BF1E9C /* LaunchScreen.xib in Resources */,
 				5C1872031AA4698200272788 /* chat_animation3.png in Resources */,
@@ -866,6 +873,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5C2956DA1A80BED400BF1E9C /* Base */,
+				D92757451AEF7FD4000A818C /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -874,8 +882,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				5C2956DF1A80BED400BF1E9C /* Base */,
+				D92757461AEF7FD4000A818C /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		D92757491AEF7FEB000A818C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D92757481AEF7FEB000A818C /* zh-Hans */,
+				D927574A1AEF7FF1000A818C /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -915,7 +933,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -950,7 +968,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

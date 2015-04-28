@@ -26,6 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"动态";
     // Do any additional setup after loading the view.
     CGSize frameSize = self.view.frame.size;
     CGSize navSize = self.navigationController.navigationBar.frame.size;
@@ -42,7 +43,6 @@
 
     _logoutButton = [[UIButton alloc] initWithFrame:CGRectMake(20, frameSize.height - navSize.height - 64, frameSize.width - 40, 30)];
     [_logoutButton setTitle:@"退出登录" forState:UIControlStateNormal];
-//    [_logoutButton setBackgroundColor:[UIColor lightGrayColor]];
     [_logoutButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [_logoutButton addTarget:self action:@selector(logout:) forControlEvents:UIControlEventTouchUpInside];
 

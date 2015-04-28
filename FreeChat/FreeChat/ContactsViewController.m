@@ -34,6 +34,7 @@ NSString * kContactCellIdentifier = @"ContactIdentifier";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"联系人";
     // Do any additional setup after loading the view, typically from a nib.
     CGSize frameSize = self.view.frame.size;
     CGSize navSize = self.navigationController.navigationBar.frame.size;
@@ -42,7 +43,7 @@ NSString * kContactCellIdentifier = @"ContactIdentifier";
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, frameSize.width, frameSize.height) style:UITableViewStylePlain];
         _tableView.allowsMultipleSelection = YES;
     } else {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, navSize.height + 24, frameSize.width, frameSize.height - navSize.height - 49) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, frameSize.width, frameSize.height - navSize.height - 49) style:UITableViewStylePlain];
         _tableView.allowsMultipleSelection = NO;
     }
     _tableView.delegate = self;
