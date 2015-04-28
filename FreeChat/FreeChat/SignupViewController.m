@@ -63,7 +63,7 @@
 
     UIButton *createButton = [[UIButton alloc] initWithFrame:CGRectMake(30, 290+50, frameSize.width - 50, 40)];
     
-    [createButton setTitle:@"创建" forState:UIControlStateNormal];
+    [createButton setTitle:@"注册" forState:UIControlStateNormal];
     [createButton setBackgroundColor:[UIColor colorWithRed:11/255.0f green:96/255.0f blue:254/255.0f alpha:1]];
     [createButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [createButton addTarget:self action:@selector(signinClicked:) forControlEvents:UIControlEventTouchUpInside];
