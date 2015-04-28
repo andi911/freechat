@@ -218,7 +218,7 @@
             </objects>
             <point key="canvasLocation" x="-883" y="639.75"/>
         </scene>
-        <!--设置-->
+        <!--动态-->
         <scene sceneID="uVl-U4-kSb">
             <objects>
                 <viewController id="TdG-Ow-ZY3" customClass="SettingsViewController" sceneMemberID="viewController">
@@ -231,7 +231,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="设置" image="setting.png" id="63i-gV-KNo"/>
+                    <tabBarItem key="tabBarItem" title="动态" image="setting.png" id="63i-gV-KNo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ZQ-E3-oq9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -259,9 +259,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Contacts.png" width="25" height="25"/>
-        <image name="Recents.png" width="25" height="25"/>
+        <image name="Contacts.png" width="32" height="32"/>
+        <image name="Recents.png" width="32" height="32"/>
         <image name="default_avatar.png" width="225" height="225"/>
-        <image name="setting.png" width="25" height="25"/>
+        <image name="setting.png" width="32" height="32"/>
     </resources>
 </document>

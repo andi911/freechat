@@ -83,15 +83,11 @@
 		5C29575D1A81EFC200BF1E9C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C29575C1A81EFC200BF1E9C /* libz.dylib */; };
 		5C29575F1A81EFCA00BF1E9C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C29575E1A81EFCA00BF1E9C /* libsqlite3.dylib */; };
 		5C2957611A81EFDA00BF1E9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2957601A81EFDA00BF1E9C /* UIKit.framework */; };
-		5C5441B91AC375E20023360D /* openchat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C5441B81AC375E20023360D /* openchat@2x.png */; };
-		5C5441BC1AC377970023360D /* Contacts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C5441BA1AC377970023360D /* Contacts@2x.png */; };
-		5C5441BD1AC377970023360D /* Recents@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C5441BB1AC377970023360D /* Recents@2x.png */; };
 		5C60E4E11A8A65BA00EE61E0 /* Constrains.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C60E4E01A8A65BA00EE61E0 /* Constrains.m */; };
 		5C60E4F11A8B2CF900EE61E0 /* group@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C60E4F01A8B2CF800EE61E0 /* group@2x.png */; };
 		5CA634641AB006E30094F784 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA634611AB006E30094F784 /* AVOSCloud.framework */; };
 		5CA634651AB006E30094F784 /* AVOSCloudIM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA634621AB006E30094F784 /* AVOSCloudIM.framework */; };
 		5CA634661AB006E30094F784 /* AVOSCloudSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA634631AB006E30094F784 /* AVOSCloudSNS.framework */; };
-		5CA95ADC1AAE8B1D004BCDFB /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CA95ADB1AAE8B1D004BCDFB /* setting@2x.png */; };
 		5CA95AE81AAE8D97004BCDFB /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5CA95ADE1AAE8D97004BCDFB /* MJRefresh.bundle */; };
 		5CA95AE91AAE8D97004BCDFB /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA95AE11AAE8D97004BCDFB /* MJRefreshBaseView.m */; };
 		5CA95AEA1AAE8D97004BCDFB /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA95AE31AAE8D97004BCDFB /* MJRefreshConst.m */; };
@@ -110,6 +106,9 @@
 		5CDB0A851AA6D6DD00F13A1F /* RemoteMessagePersisiter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB0A841AA6D6DD00F13A1F /* RemoteMessagePersisiter.m */; };
 		5CDB0A8B1AA7179E00F13A1F /* default_avatar_mal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CDB0A891AA7179E00F13A1F /* default_avatar_mal.png */; };
 		5CDB0A8C1AA7179E00F13A1F /* add_member.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CDB0A8A1AA7179E00F13A1F /* add_member.png */; };
+		D92757301AEF4233000A818C /* Recents@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D927572F1AEF4233000A818C /* Recents@2x.png */; };
+		D92757331AEF42F5000A818C /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D92757311AEF42F5000A818C /* setting@2x.png */; };
+		D92757341AEF42F5000A818C /* Contacts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D92757321AEF42F5000A818C /* Contacts@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -251,16 +250,12 @@
 		5C29575C1A81EFC200BF1E9C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		5C29575E1A81EFCA00BF1E9C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		5C2957601A81EFDA00BF1E9C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		5C5441B81AC375E20023360D /* openchat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "openchat@2x.png"; path = "images/openchat@2x.png"; sourceTree = "<group>"; };
-		5C5441BA1AC377970023360D /* Contacts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Contacts@2x.png"; path = "images/Contacts@2x.png"; sourceTree = "<group>"; };
-		5C5441BB1AC377970023360D /* Recents@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Recents@2x.png"; path = "images/Recents@2x.png"; sourceTree = "<group>"; };
 		5C60E4DF1A8A65BA00EE61E0 /* Constrains.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constrains.h; sourceTree = "<group>"; };
 		5C60E4E01A8A65BA00EE61E0 /* Constrains.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constrains.m; sourceTree = "<group>"; };
 		5C60E4F01A8B2CF800EE61E0 /* group@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "group@2x.png"; path = "images/group@2x.png"; sourceTree = "<group>"; };
 		5CA634611AB006E30094F784 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVOSCloud.framework; sourceTree = "<group>"; };
 		5CA634621AB006E30094F784 /* AVOSCloudIM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVOSCloudIM.framework; sourceTree = "<group>"; };
 		5CA634631AB006E30094F784 /* AVOSCloudSNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVOSCloudSNS.framework; sourceTree = "<group>"; };
-		5CA95ADB1AAE8B1D004BCDFB /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "setting@2x.png"; path = "images/setting@2x.png"; sourceTree = "<group>"; };
 		5CA95ADE1AAE8D97004BCDFB /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MJRefresh.bundle; path = "third-parties/MJRefresh/MJRefresh.bundle"; sourceTree = "<group>"; };
 		5CA95ADF1AAE8D97004BCDFB /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJRefresh.h; path = "third-parties/MJRefresh/MJRefresh.h"; sourceTree = "<group>"; };
 		5CA95AE01AAE8D97004BCDFB /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJRefreshBaseView.h; path = "third-parties/MJRefresh/MJRefreshBaseView.h"; sourceTree = "<group>"; };
@@ -297,6 +292,9 @@
 		5CDB0A861AA6DBD000F13A1F /* MessagePersister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagePersister.h; sourceTree = "<group>"; };
 		5CDB0A891AA7179E00F13A1F /* default_avatar_mal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = default_avatar_mal.png; path = images/default_avatar_mal.png; sourceTree = "<group>"; };
 		5CDB0A8A1AA7179E00F13A1F /* add_member.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = add_member.png; path = images/add_member.png; sourceTree = "<group>"; };
+		D927572F1AEF4233000A818C /* Recents@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Recents@2x.png"; sourceTree = "<group>"; };
+		D92757311AEF42F5000A818C /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting@2x.png"; sourceTree = "<group>"; };
+		D92757321AEF42F5000A818C /* Contacts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contacts@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -468,7 +466,6 @@
 				5C1871911AA464B600272788 /* third-parties */,
 				5C60E4F31A8B509C00EE61E0 /* view */,
 				5C0315761A8378D70051E65C /* utils */,
-				5C5DC3101A8207FD00E87E79 /* images */,
 				5C29572E1A81C50B00BF1E9C /* model */,
 				5C2957211A811B7500BF1E9C /* controller */,
 				5C2956D01A80BED400BF1E9C /* AppDelegate.h */,
@@ -486,6 +483,7 @@
 		5C2956CC1A80BED400BF1E9C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5C5DC3101A8207FD00E87E79 /* images */,
 				5C2956CD1A80BED400BF1E9C /* Info.plist */,
 				5C2956CE1A80BED400BF1E9C /* main.m */,
 			);
@@ -577,10 +575,9 @@
 		5C5DC3101A8207FD00E87E79 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				5C5441BA1AC377970023360D /* Contacts@2x.png */,
-				5C5441BB1AC377970023360D /* Recents@2x.png */,
-				5C5441B81AC375E20023360D /* openchat@2x.png */,
-				5CA95ADB1AAE8B1D004BCDFB /* setting@2x.png */,
+				D927572F1AEF4233000A818C /* Recents@2x.png */,
+				D92757311AEF42F5000A818C /* setting@2x.png */,
+				D92757321AEF42F5000A818C /* Contacts@2x.png */,
 				5CDB0A891AA7179E00F13A1F /* default_avatar_mal.png */,
 				5CDB0A8A1AA7179E00F13A1F /* add_member.png */,
 				5C1871EF1AA4698200272788 /* chat_animation_white1.png */,
@@ -736,18 +733,17 @@
 			files = (
 				5C18720B1AA4698200272788 /* chatfrom_doctor_icon.png in Resources */,
 				5C1872041AA4698200272788 /* chat_ipunt_message.png in Resources */,
-				5C5441BD1AC377970023360D /* Recents@2x.png in Resources */,
 				5C18720C1AA4698200272788 /* chatto_bg_normal.png in Resources */,
 				5C0315651A8209200051E65C /* default_avatar.png in Resources */,
 				5C2956DB1A80BED400BF1E9C /* Main.storyboard in Resources */,
 				5C2956E01A80BED400BF1E9C /* LaunchScreen.xib in Resources */,
-				5CA95ADC1AAE8B1D004BCDFB /* setting@2x.png in Resources */,
 				5C1872031AA4698200272788 /* chat_animation3.png in Resources */,
 				5C1872051AA4698200272788 /* chat_message_back.png in Resources */,
 				5C1872061AA4698200272788 /* Chat_record_circle.png in Resources */,
 				5C1872081AA4698200272788 /* Chat_take_picture.png in Resources */,
 				5C1872021AA4698200272788 /* chat_animation2.png in Resources */,
 				5C1872091AA4698200272788 /* chat_voice_record.png in Resources */,
+				D92757331AEF42F5000A818C /* setting@2x.png in Resources */,
 				5C60E4F11A8B2CF900EE61E0 /* group@2x.png in Resources */,
 				5CA95AE81AAE8D97004BCDFB /* MJRefresh.bundle in Resources */,
 				5CDB0A8C1AA7179E00F13A1F /* add_member.png in Resources */,
@@ -755,12 +751,12 @@
 				5C1872011AA4698200272788 /* chat_animation1.png in Resources */,
 				5C1871FF1AA4698200272788 /* chat_animation_white2.png in Resources */,
 				5CDB0A8B1AA7179E00F13A1F /* default_avatar_mal.png in Resources */,
+				D92757341AEF42F5000A818C /* Contacts@2x.png in Resources */,
 				5C1872071AA4698200272788 /* chat_send_message.png in Resources */,
-				5C5441B91AC375E20023360D /* openchat@2x.png in Resources */,
+				D92757301AEF4233000A818C /* Recents@2x.png in Resources */,
 				5C1872001AA4698200272788 /* chat_animation_white3.png in Resources */,
 				5C2956DD1A80BED400BF1E9C /* Images.xcassets in Resources */,
 				5C18720A1AA4698200272788 /* chatfrom_bg_normal.png in Resources */,
-				5C5441BC1AC377970023360D /* Contacts@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

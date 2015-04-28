@@ -35,6 +35,26 @@ NSString * kConversationCellIdentifier = @"ConversationIdentifier";
     _recentConversations = [[NSMutableArray alloc] initWithCapacity:20];
     ConversationStore *store = [ConversationStore sharedInstance];
     [store addEventObserver:self forConversation:@"*"];
+    [self loadFootView];
+    [self baseInformation];
+    
+}
+
+- (void)baseInformation {
+    if ([_tableView respondsToSelector:@selector(setSeparatorInset:)]) {
+        
+        [_tableView setSeparatorInset:UIEdgeInsetsZero];
+    }
+    
+    if ([_tableView respondsToSelector:@selector(setLayoutMargins:)]) {
+        
+        [_tableView setLayoutMargins:UIEdgeInsetsZero];
+    }
+}
+
+- (void)loadFootView {
+    UILabel *label = [[UILabel alloc]init];
+    _tableView.tableFooterView = label;
 }
 
 -(void)viewDidUnload{
@@ -98,6 +118,8 @@ NSString * kConversationCellIdentifier = @"ConversationIdentifier";
     return 1;
 }
 
+
+
 #pragma UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     AVIMConversation *conv = [_recentConversations objectAtIndex:[indexPath row]];
@@ -108,6 +130,21 @@ NSString * kConversationCellIdentifier = @"ConversationIdentifier";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 44.0f;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
+        
+        [cell setSeparatorInset:UIEdgeInsetsZero];
+    }
+    
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+        
+        [cell setLayoutMargins:UIEdgeInsetsZero];
+    }
+    
 }
 
 #pragma IMEventObserver
