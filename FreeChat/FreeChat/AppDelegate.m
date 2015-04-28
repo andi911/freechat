@@ -11,7 +11,7 @@
 #import "MainViewController.h"
 #import "AVOSCloud/AVOSCloud.h"
 #import "ConversationStore.h"
-
+#import "Common.h"
 #define SYSTEM_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
 
 @interface AppDelegate ()
@@ -44,6 +44,17 @@
         [application registerUserNotificationSettings:settings];
         [application registerForRemoteNotifications];
     }
+    
+    //set UI Image
+    if (CURRENT_SYS_VERSION >= 7.0) {
+        [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:27/255.0f green:166/255.0f blue:225/255.0f alpha:1]];
+        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    } else {
+        [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:27/255.0f green:166/255.0f blue:225/255.0f alpha:1]];
+    }
+    
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor whiteColor], NSForegroundColorAttributeName, [UIFont boldSystemFontOfSize:17], NSFontAttributeName, nil]];
     return YES;
 }
 

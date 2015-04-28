@@ -295,6 +295,7 @@
 		D927572F1AEF4233000A818C /* Recents@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Recents@2x.png"; sourceTree = "<group>"; };
 		D92757311AEF42F5000A818C /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting@2x.png"; sourceTree = "<group>"; };
 		D92757321AEF42F5000A818C /* Contacts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contacts@2x.png"; sourceTree = "<group>"; };
+		D92757351AEF617D000A818C /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -472,6 +473,7 @@
 				5C2956D11A80BED400BF1E9C /* AppDelegate.m */,
 				5C60E4DF1A8A65BA00EE61E0 /* Constrains.h */,
 				5C60E4E01A8A65BA00EE61E0 /* Constrains.m */,
+				D92757351AEF617D000A818C /* Common.h */,
 				5C2956D91A80BED400BF1E9C /* Main.storyboard */,
 				5C2956DC1A80BED400BF1E9C /* Images.xcassets */,
 				5C2956DE1A80BED400BF1E9C /* LaunchScreen.xib */,

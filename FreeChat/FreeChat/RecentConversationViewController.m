@@ -37,7 +37,31 @@ NSString * kConversationCellIdentifier = @"ConversationIdentifier";
     [store addEventObserver:self forConversation:@"*"];
     [self loadFootView];
     [self baseInformation];
+//    [self loadSegmentController];
     
+}
+
+- (void) loadSegmentController{
+    NSArray *segmentedData = [[NSArray alloc]initWithObjects:NSLocalizedString(@"Message", nil),NSLocalizedString(@"Phone", nil), nil];
+    UISegmentedControl *segmentedControl = [[UISegmentedControl alloc]initWithItems:segmentedData];
+    segmentedControl.tintColor = [UIColor colorWithWhite:0.94 alpha:1];
+    segmentedControl.selectedSegmentIndex = 0;//默认选中的按钮索引
+    /*下面的代码实同正常状态和按下状态的属性控制,比如字体的大小和颜色等*/
+    NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont boldSystemFontOfSize:12],NSFontAttributeName,[UIColor whiteColor], NSForegroundColorAttributeName,nil];
+    
+    [segmentedControl setTitleTextAttributes:attributes forState:UIControlStateNormal];
+    
+    NSDictionary *highlightedAttributes = [NSDictionary dictionaryWithObject:[UIColor colorWithRed:27/255.0f green:166/255.0f blue:225/255.0f alpha:1] forKey:NSForegroundColorAttributeName];
+    
+    [segmentedControl setTitleTextAttributes:highlightedAttributes forState:UIControlStateHighlighted];
+    
+    //设置分段控件点击相应事件
+    [segmentedControl addTarget:self action:@selector(doSomethingInSegment:)forControlEvents:UIControlEventValueChanged];
+    self.navigationItem.titleView = segmentedControl;
+}
+
+- (void)doSomethingInSegment:(id)sender {
+    NSLog(@"do some thing");
 }
 
 - (void)baseInformation {

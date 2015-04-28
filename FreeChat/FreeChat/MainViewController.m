@@ -29,8 +29,7 @@
     self.navigationItem.leftBarButtonItem=nil;
     self.navigationItem.hidesBackButton = YES;
     self.delegate = self;
-    self.title = @"最新消息";
-}
+  }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -57,7 +56,6 @@
 #pragma UITabBarControllerDelegate
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
     if ([viewController isKindOfClass:[RecentConversationViewController class]]) {
-        self.title = @"最新消息";
     } else if ([viewController isKindOfClass:[ContactsViewController class]]) {
         self.title = @"联系人";
     } else if ([viewController isKindOfClass:[SettingsViewController class]]) {
