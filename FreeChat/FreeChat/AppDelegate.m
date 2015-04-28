@@ -11,8 +11,6 @@
 #import "MainViewController.h"
 #import "AVOSCloud/AVOSCloud.h"
 #import "ConversationStore.h"
-#import "Common.h"
-#define SYSTEM_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
 
 @interface AppDelegate ()
 

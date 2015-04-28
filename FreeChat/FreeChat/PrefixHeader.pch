@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  FreeChat
+//
+//  Created by liangyu on 15/4/28.
+//  Copyright (c) 2015年 Feng Junwen. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifdef __OBJC__
+  #import "Common.h"
+  #import <UIKit/UIKit.h>
+  #import <Foundation/Foundation.h>
+#endif
