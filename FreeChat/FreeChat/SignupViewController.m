@@ -26,7 +26,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     CGSize frameSize = self.view.frame.size;
-    _avatar = [[UIImageView alloc] initWithFrame:CGRectMake((frameSize.width - 80)/2, 70, 80, 80)];
+    _avatar = [[UIImageView alloc] initWithFrame:CGRectMake((frameSize.width - 80)/2, 111, 80, 80)];
     _avatar.layer.masksToBounds = YES;
     _avatar.layer.cornerRadius = 40;
     [_avatar setImage:[UIImage imageNamed:@"default_avatar"]];
@@ -34,19 +34,21 @@
     [_avatar addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(avatarTap:)]];
     _customeImage = nil;
 
-    _username = [[UITextField alloc] initWithFrame:CGRectMake(30, 160, frameSize.width - 60, 30)];
+    _username = [[UITextField alloc] initWithFrame:CGRectMake(70, 160+50, frameSize.width - 100, 30)];
     [_username setBorderStyle:UITextBorderStyleRoundedRect];
-    [_username setPlaceholder:@"username"];
-    _email = [[UITextField alloc] initWithFrame:CGRectMake(30, 200, frameSize.width - 60, 30)];
+    [_username setPlaceholder:@"用户名"];
+    _email = [[UITextField alloc] initWithFrame:CGRectMake(70, 200+50, frameSize.width - 100, 30)];
     [_email setBorderStyle:UITextBorderStyleRoundedRect];
-    [_email setPlaceholder:@"email"];
-    _password = [[UITextField alloc] initWithFrame:CGRectMake(30, 240, frameSize.width - 60, 30)];
+    [_email setPlaceholder:@"邮箱"];
+    _password = [[UITextField alloc] initWithFrame:CGRectMake(70, 240+50, frameSize.width - 100, 30)];
     [_password setBorderStyle:UITextBorderStyleRoundedRect];
-    [_password setPlaceholder:@"password"];
+    [_password setPlaceholder:@"密码"];
 
-    UIButton *createButton = [[UIButton alloc] initWithFrame:CGRectMake(frameSize.width - 70, 290, 60, 20)];
-    [createButton setTitle:@"Create" forState:UIControlStateNormal];
-    [createButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    UIButton *createButton = [[UIButton alloc] initWithFrame:CGRectMake(30, 290+50, frameSize.width - 60, 40)];
+    
+    [createButton setTitle:@"创建" forState:UIControlStateNormal];
+    [createButton setBackgroundColor:[UIColor colorWithRed:11/255.0f green:96/255.0f blue:254/255.0f alpha:1]];
+    [createButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [createButton addTarget:self action:@selector(signinClicked:) forControlEvents:UIControlEventTouchUpInside];
 
     [self.view addSubview:_avatar];

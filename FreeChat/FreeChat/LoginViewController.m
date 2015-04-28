@@ -12,10 +12,7 @@
 #import "MainViewController.h"
 #import "ConversationStore.h"
 
-@interface LoginViewController () {
-    UITextField *_username;
-    UITextField *_password;
-}
+@interface LoginViewController () 
 
 @end
 
@@ -25,6 +22,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.headImage.layer.masksToBounds = YES;
+    self.headImage.layer.cornerRadius = 40;
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
