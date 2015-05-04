@@ -110,6 +110,10 @@
 		D92757331AEF42F5000A818C /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D92757311AEF42F5000A818C /* setting@2x.png */; };
 		D92757341AEF42F5000A818C /* Contacts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D92757321AEF42F5000A818C /* Contacts@2x.png */; };
 		D92757471AEF7FEB000A818C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D92757491AEF7FEB000A818C /* Localizable.strings */; };
+		D9C085011AF717C400E73618 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C085001AF717C400E73618 /* LeftViewController.m */; };
+		D9C085091AF71EB400E73618 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C085081AF71EB400E73618 /* RightViewController.m */; };
+		D9C0850C1AF7264A00E73618 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C0850B1AF7264A00E73618 /* MessageViewController.m */; };
+		D9C085171AF7463E00E73618 /* 333.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9C085161AF7463E00E73618 /* 333.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -302,6 +306,13 @@
 		D92757461AEF7FD4000A818C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		D92757481AEF7FEB000A818C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		D927574A1AEF7FF1000A818C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D9C084FF1AF717C400E73618 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		D9C085001AF717C400E73618 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		D9C085071AF71EB400E73618 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		D9C085081AF71EB400E73618 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
+		D9C0850A1AF7264A00E73618 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		D9C0850B1AF7264A00E73618 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		D9C085161AF7463E00E73618 /* 333.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 333.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -520,6 +531,12 @@
 		5C2957211A811B7500BF1E9C /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				D9C084FF1AF717C400E73618 /* LeftViewController.h */,
+				D9C085001AF717C400E73618 /* LeftViewController.m */,
+				D9C085071AF71EB400E73618 /* RightViewController.h */,
+				D9C085081AF71EB400E73618 /* RightViewController.m */,
+				D9C0850A1AF7264A00E73618 /* MessageViewController.h */,
+				D9C0850B1AF7264A00E73618 /* MessageViewController.m */,
 				5C2956D31A80BED400BF1E9C /* RecentConversationViewController.h */,
 				5C2956D41A80BED400BF1E9C /* RecentConversationViewController.m */,
 				5C2956D61A80BED400BF1E9C /* ContactsViewController.h */,
@@ -585,6 +602,7 @@
 		5C5DC3101A8207FD00E87E79 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				D9C085161AF7463E00E73618 /* 333.jpg */,
 				D927572F1AEF4233000A818C /* Recents@2x.png */,
 				D92757311AEF42F5000A818C /* setting@2x.png */,
 				D92757321AEF42F5000A818C /* Contacts@2x.png */,
@@ -764,6 +782,7 @@
 				5CDB0A8B1AA7179E00F13A1F /* default_avatar_mal.png in Resources */,
 				D92757341AEF42F5000A818C /* Contacts@2x.png in Resources */,
 				5C1872071AA4698200272788 /* chat_send_message.png in Resources */,
+				D9C085171AF7463E00E73618 /* 333.jpg in Resources */,
 				D92757301AEF4233000A818C /* Recents@2x.png in Resources */,
 				5C1872001AA4698200272788 /* chat_animation_white3.png in Resources */,
 				5C2956DD1A80BED400BF1E9C /* Images.xcassets in Resources */,
@@ -803,6 +822,7 @@
 				5CDB0A851AA6D6DD00F13A1F /* RemoteMessagePersisiter.m in Sources */,
 				5CDB0A7B1AA6162B00F13A1F /* FMDatabaseAdditions.m in Sources */,
 				5C1872231AA46A7200272788 /* ConversationMuteView.m in Sources */,
+				D9C085011AF717C400E73618 /* LeftViewController.m in Sources */,
 				5CDB0A7D1AA6162B00F13A1F /* FMDatabaseQueue.m in Sources */,
 				5C29571A1A811B2700BF1E9C /* LoginViewController.m in Sources */,
 				5C1871CC1AA466A700272788 /* AFHTTPSessionManager.m in Sources */,
@@ -825,10 +845,12 @@
 				5C1871E61AA466B800272788 /* UIAlertView+AFNetworking.m in Sources */,
 				5C1871AF1AA4651E00272788 /* UUMessageContentButton.m in Sources */,
 				5C1871AA1AA4651E00272788 /* UUInputFunctionView.m in Sources */,
+				D9C0850C1AF7264A00E73618 /* MessageViewController.m in Sources */,
 				5C1872361AA5840300272788 /* FCMessageCell.m in Sources */,
 				5C1872241AA46A7200272788 /* ConversationMemberGroupView.m in Sources */,
 				5C1871AE1AA4651E00272788 /* UUMessageCell.m in Sources */,
 				5C1871CD1AA466A700272788 /* AFNetworkReachabilityManager.m in Sources */,
+				D9C085091AF71EB400E73618 /* RightViewController.m in Sources */,
 				5C1871AC1AA4651E00272788 /* UUImageAvatarBrowser.m in Sources */,
 				5CDB0A7C1AA6162B00F13A1F /* FMDatabasePool.m in Sources */,
 				5CA95AEA1AAE8D97004BCDFB /* MJRefreshConst.m in Sources */,

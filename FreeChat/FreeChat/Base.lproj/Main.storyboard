@@ -6,6 +6,22 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="OTc-kc-Bqt">
+            <objects>
+                <navigationController id="qlK-0B-oDR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PAa-qF-ei9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="Oaf-P3-mf9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O0P-ep-yaX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976" y="-902"/>
+        </scene>
         <!--消息-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
@@ -15,7 +31,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -24,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1190" y="-376"/>
+            <point key="canvasLocation" x="1736" y="-883"/>
         </scene>
         <!--Conversation Detail View Controller-->
         <scene sceneID="RBv-CE-5uF">
@@ -43,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="98S-JH-lTP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2188.5" y="-310"/>
+            <point key="canvasLocation" x="2414" y="-384"/>
         </scene>
         <!--联系人-->
         <scene sceneID="wg7-f3-ORb">
@@ -304,12 +320,31 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="vB3-YH-c00"/>
+                        <segue destination="MgA-2F-bRw" kind="relationship" relationship="rootViewController" id="WPl-q3-cki"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GlE-gX-SiZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="475" y="-299"/>
+        </scene>
+        <!--Message View Controller-->
+        <scene sceneID="OA7-4y-00O">
+            <objects>
+                <viewController id="MgA-2F-bRw" customClass="MessageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yxm-u3-SxK"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Cg-L5-06R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rba-hK-xce">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="16B-Vs-UEe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XJ3-hG-6Ui" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1140" y="-361"/>
         </scene>
     </scenes>
     <resources>

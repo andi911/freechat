@@ -7,11 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ConversationStore.h"
 
 @interface RecentConversationViewController : UIViewController
-<UITableViewDataSource, UITableViewDelegate, IMEventObserver>
-
-
+@property (nonatomic, strong)UITableView *tableView;
 @end
 

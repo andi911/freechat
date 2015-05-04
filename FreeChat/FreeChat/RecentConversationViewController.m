@@ -10,11 +10,13 @@
 #import "ConversationStore.h"
 #import "ChatViewController.h"
 #import "ConversationUtils.h"
+#import "LeftViewController.h"
+#import "RightViewController.h"
+#import "ConversationStore.h"
 
 NSString * kConversationCellIdentifier = @"ConversationIdentifier";
 
-@interface RecentConversationViewController () {
-    UITableView *_tableView;
+@interface RecentConversationViewController ()<UITableViewDataSource, UITableViewDelegate, IMEventObserver> {
     NSMutableArray *_recentConversations;
 }
 
@@ -27,10 +29,10 @@ NSString * kConversationCellIdentifier = @"ConversationIdentifier";
     // Do any additional setup after loading the view, typically from a nib.
     CGSize frameSize = self.view.frame.size;
     CGSize navSize = self.navigationController.navigationBar.frame.size;
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, navSize.height + 24, frameSize.width, frameSize.height - navSize.height) style:UITableViewStylePlain];
-    _tableView.delegate = self;
-    _tableView.dataSource = self;
-    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kConversationCellIdentifier];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,64, frameSize.width, frameSize.height - navSize.height) style:UITableViewStylePlain];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kConversationCellIdentifier];
     [self.view addSubview:_tableView];
     _recentConversations = [[NSMutableArray alloc] initWithCapacity:20];
     ConversationStore *store = [ConversationStore sharedInstance];
@@ -40,6 +42,7 @@ NSString * kConversationCellIdentifier = @"ConversationIdentifier";
     [self loadSegmentController];
     
 }
+
 
 - (void) loadSegmentController{
     NSArray *segmentedData = [[NSArray alloc]initWithObjects:NSLocalizedString(@"Message", nil),NSLocalizedString(@"Phone", nil), nil];
