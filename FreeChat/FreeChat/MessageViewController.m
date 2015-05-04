@@ -62,7 +62,39 @@
     tap.numberOfTapsRequired=1;
     tap.numberOfTouchesRequired=1;
     [center.view addGestureRecognizer:tap];
+    [self loadNagaviButton];
 }
+
+- (void)loadNagaviButton {
+    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"iconfont-qq.png"] style:UIBarButtonItemStylePlain target:self action:@selector(showLeftView)];
+    self.navigationItem.leftBarButtonItem = leftButton;
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"iconfont-jiantou.png"] style:UIBarButtonItemStylePlain target:self action:@selector(showRightView)];
+    self.navigationItem.rightBarButtonItem = rightButton;
+}
+
+- (void)showLeftView {
+    showLeft=YES;
+    left.view.hidden=NO;
+    showRight=NO;
+    right.view.hidden=YES;
+        [UIView animateWithDuration:0.3 animations:^{
+            center.view.transform = CGAffineTransformScale(CGAffineTransformIdentity,0.8,0.8);
+            center.view.center = CGPointMake([UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height/2);
+        }];
+}
+
+- (void)showRightView {
+    showLeft=NO;
+    left.view.hidden=YES;
+    showRight=YES;
+    right.view.hidden=NO;
+        [UIView animateWithDuration:0.3 animations:^{
+            center.view.transform = CGAffineTransformScale(CGAffineTransformIdentity,0.8,0.8);
+            center.view.center = CGPointMake(0,[UIScreen mainScreen].bounds.size.height/2);
+        }];
+}
+
+
 
 -(void)panHandle:(UIPanGestureRecognizer *)sender{
     CGPoint translation=[sender translationInView:self.view];

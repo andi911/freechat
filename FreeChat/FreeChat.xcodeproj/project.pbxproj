@@ -114,6 +114,8 @@
 		D9C085091AF71EB400E73618 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C085081AF71EB400E73618 /* RightViewController.m */; };
 		D9C0850C1AF7264A00E73618 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C0850B1AF7264A00E73618 /* MessageViewController.m */; };
 		D9C085171AF7463E00E73618 /* 333.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9C085161AF7463E00E73618 /* 333.jpg */; };
+		D9C085211AF759EF00E73618 /* iconfont-jiantou@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C0851F1AF759EF00E73618 /* iconfont-jiantou@2x.png */; };
+		D9C085221AF759EF00E73618 /* iconfont-qq@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C085201AF759EF00E73618 /* iconfont-qq@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -313,6 +315,8 @@
 		D9C0850A1AF7264A00E73618 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		D9C0850B1AF7264A00E73618 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		D9C085161AF7463E00E73618 /* 333.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 333.jpg; sourceTree = "<group>"; };
+		D9C0851F1AF759EF00E73618 /* iconfont-jiantou@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-jiantou@2x.png"; sourceTree = "<group>"; };
+		D9C085201AF759EF00E73618 /* iconfont-qq@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-qq@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -502,6 +506,7 @@
 		5C2956CC1A80BED400BF1E9C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D9C0851E1AF759DA00E73618 /* nagaviItemImage */,
 				5C5DC3101A8207FD00E87E79 /* images */,
 				5C2956CD1A80BED400BF1E9C /* Info.plist */,
 				5C2956CE1A80BED400BF1E9C /* main.m */,
@@ -679,6 +684,15 @@
 			name = fmdb;
 			sourceTree = "<group>";
 		};
+		D9C0851E1AF759DA00E73618 /* nagaviItemImage */ = {
+			isa = PBXGroup;
+			children = (
+				D9C0851F1AF759EF00E73618 /* iconfont-jiantou@2x.png */,
+				D9C085201AF759EF00E73618 /* iconfont-qq@2x.png */,
+			);
+			name = nagaviItemImage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -784,7 +798,9 @@
 				5C1872071AA4698200272788 /* chat_send_message.png in Resources */,
 				D9C085171AF7463E00E73618 /* 333.jpg in Resources */,
 				D92757301AEF4233000A818C /* Recents@2x.png in Resources */,
+				D9C085211AF759EF00E73618 /* iconfont-jiantou@2x.png in Resources */,
 				5C1872001AA4698200272788 /* chat_animation_white3.png in Resources */,
+				D9C085221AF759EF00E73618 /* iconfont-qq@2x.png in Resources */,
 				5C2956DD1A80BED400BF1E9C /* Images.xcassets in Resources */,
 				5C18720A1AA4698200272788 /* chatfrom_bg_normal.png in Resources */,
 			);
