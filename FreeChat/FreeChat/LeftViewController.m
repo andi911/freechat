@@ -24,7 +24,7 @@
 
 - (void)loadTableView {
     listArray = @[@"开通会员",@"QQ钱包",@"网上营业厅",@"个性打扮",@"我的收藏",@"我的相册"];
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.tableView.separatorColor = [UIColor clearColor];
