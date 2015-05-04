@@ -44,6 +44,8 @@ NSString * kConversationCellIdentifier = @"ConversationIdentifier";
 - (void) loadSegmentController{
     NSArray *segmentedData = [[NSArray alloc]initWithObjects:NSLocalizedString(@"Message", nil),NSLocalizedString(@"Phone", nil), nil];
     UISegmentedControl *segmentedControl = [[UISegmentedControl alloc]initWithItems:segmentedData];
+    segmentedControl.frame = CGRectMake(0, 0, 160, 30);
+    segmentedControl.center = CGPointMake(Screen_W/2, 24);
     segmentedControl.tintColor = [UIColor colorWithWhite:0.94 alpha:1];
     segmentedControl.selectedSegmentIndex = 0;//默认选中的按钮索引
     /*下面的代码实同正常状态和按下状态的属性控制,比如字体的大小和颜色等*/
@@ -57,7 +59,8 @@ NSString * kConversationCellIdentifier = @"ConversationIdentifier";
     
     //设置分段控件点击相应事件
     [segmentedControl addTarget:self action:@selector(doSomethingInSegment:)forControlEvents:UIControlEventValueChanged];
-    self.navigationItem.titleView = segmentedControl;
+    [self.navigationController.navigationBar addSubview:segmentedControl];
+//    self.navigationItem.titleView = segmentedControl;
 }
 
 - (void)doSomethingInSegment:(id)sender {
