@@ -59,7 +59,7 @@
     [center.view addGestureRecognizer:self.panGesture];
     
     UITapGestureRecognizer *tap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapHandle:)];
-    tap.numberOfTapsRequired=1;
+    tap.numberOfTapsRequired=2;
     tap.numberOfTouchesRequired=1;
     [center.view addGestureRecognizer:tap];
     [self loadNagaviButton];

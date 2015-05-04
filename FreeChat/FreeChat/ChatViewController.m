@@ -34,6 +34,10 @@ UUInputFunctionViewDelegate, FCMessageCellDelegate, ConversationOperationDelegat
 @implementation ChatViewController
 
 @synthesize conversation;
+- (void)viewWillAppear:(BOOL)animated {
+    self.tabBarController.tabBar.hidden = YES;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -131,6 +135,7 @@ UUInputFunctionViewDelegate, FCMessageCellDelegate, ConversationOperationDelegat
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
+    self.tabBarController.tabBar.hidden = NO;
 
     if (self.conversation.transient) {
         [self.conversation quitWithCallback:^(BOOL succeeded, NSError *error) {
@@ -151,9 +156,6 @@ UUInputFunctionViewDelegate, FCMessageCellDelegate, ConversationOperationDelegat
     [[NSNotificationCenter defaultCenter]removeObserver:self];
 }
 
--(void)dealloc {
-    [_refreshHead free];
-}
 
 /*
 #pragma mark - Navigation
